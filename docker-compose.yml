@@ -1,0 +1,12 @@
+web:
+  build: app
+  ports:
+    - "3008:3000"
+  environment:
+    - NODE_PATH=/app
+    - NODE_ENV=container
+    - NODE_VERSION=v5.1.0
+    - NVM_DIR=/home/node/.nvm
+
+# mongo:
+#   image: mongo
